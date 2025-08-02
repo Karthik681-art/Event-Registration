@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="Event.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="14159080_1920_1080_24fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="container">
+    <h1 class="title">✨ Event Registration Portal ✨</h1>
+
+    <form id="registrationForm">
+  <input type="text" id="name" placeholder="👤 Your Name" required />
+  <input type="email" id="email" placeholder="📧 Your Email" required />
+  <input type="text" id="address" placeholder="🏠 Your College" required />
+  <input type="tel" id="phone" placeholder="📞 Contact Number" required pattern="[0-9]{10}" />
+  
+  <select id="event" required>
+    <option value="">🎉 Select Event</option>
+    <option value="ai">🤖 AI Workshop</option>
+    <option value="web">🌐 Web Dev Bootcamp</option>
+    <option value="flutter">🦋 Flutter Fest</option>
+    <option value="drone">🚁 Drone Technology</option>
+    <option value="nlp">🗣️ NLP Workshop</option>
+    <option value="chatbot">🤖 Chatbot Workshop</option>
+    <option value="hackathon">🚀 24 Hours Hackathon</option>
+  </select>
+
+  <label for="accommodation">🏨 Need Accommodation?</label>
+  <select id="accommodation" required>
+    <option value="">Select Option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <button type="submit">Register Now</button>
+</form>
+
+
+    <p id="successMessage" class="success-message"></p>
+
+    <div id="eventDetails" class="event-details hidden"></div>
+    <button id="viewRegistrationsBtn">👀 View Registrations (Admin)</button>
+<div id="adminData" class="event-details hidden"></div>
+
+<section id="location" style="margin-top: 40px; text-align: center;">
+  <h2>📍 Event Location</h2>
+  <div style="display: flex; justify-content: center; padding: 10px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.9573069127923!2d81.97662547460712!3d16.426994529762073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37e24b384e8e59%3A0x5536915c792260bd!2sBVC%20Engineering%20College%20Rd%2C%20Odalarevu%2C%20Andhra%20Pradesh%20533210!5e0!3m2!1sen!2sin!4v1754120303440!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+  </div>
+</section>
+
+    <!-- ⭐ Sponsors Section -->
+    <div class="sponsors">
+      <h2>🎖️ Our Proud Sponsors</h2>
+      <div class="sponsor-logos">
+        <img src="images/gg.webp" alt="Google" />
+        <img src="images/msu.jpeg" alt="MSU" />
+        <img src="images/info.png" alt="Infosys" />
+      </div>
+    </div>
+  </div>
+
+  <!-- 📜 Footer -->
+  <footer class="footer">
+    © 2025 Karthik. All rights reserved.
+  </footer>
+
+  <script src="Event.js"></script>
+</body>
+</html>
