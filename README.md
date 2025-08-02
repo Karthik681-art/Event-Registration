@@ -20,7 +20,6 @@ CSS3 – Styling
 JavaScript (Vanilla) – Form handling & interactivity
 Google Maps Embed API – Location mapping
 🏁 Getting Started
-Clone the repository ```bash git clone https://github.com/your-username/event-registration-website.git Navigate to the project folder
 bash Copy Edit cd event-registration-website Open index.html in your browser
 
 You can also host this on platforms like GitHub Pages, Netlify, or Vercel.
