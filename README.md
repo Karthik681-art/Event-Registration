@@ -21,13 +21,6 @@ A responsive and interactive **Event Registration Portal** built with HTML, CSS,
 
 ---
 
-## 📸 Screenshots
-
-![Event Form](screenshots/form.png)
-![Admin View](screenshots/admin.png)
-![Map](screenshots/map.png)
-
----
 
 ## 🚀 Technologies Used
 
