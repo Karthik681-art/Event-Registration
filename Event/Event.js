@@ -230,6 +230,21 @@ form.addEventListener("submit", function (e) {
     }
   }, 100);
 });
+document.getElementById("viewRegistrationsBtn").addEventListener("click", () => {
+  const password = prompt("Enter admin password:");
+
+  if (password === "kl123") {
+    showAdminData(); // Show registrations
+  } else {
+    alert("Incorrect password. Access denied.");
+  }
+});
+
+function showAdminData() {
+  const adminData = document.getElementById("adminData");
+  adminData.classList.remove("hidden");
+  // render registration data here...
+}
 
 // 👀 View Registrations (Admin)
 viewBtn.addEventListener("click", () => {
